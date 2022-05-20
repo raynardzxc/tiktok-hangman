@@ -29,6 +29,9 @@ import ToggleMode from './Components /ToggleMode.js';
 import style from 'styled-theming';
 import './style.css';
 import Hangman from './Hangman/Hangman';
+import Navbar from './Navigation/Navbar';
+import App from './App';
+
 
 const getBackground = style('mode', {
   light: '#EEE',
@@ -48,21 +51,23 @@ body {
 }
 `;
 
-function App() {
+function Index() {
   const theme = useTheme();
 
   return (
+    <div> 
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
         <div className="App">
-          <Hangman/>
-          <ToggleMode />
+          <App/>
+          {/* <ToggleMode /> */}
         </div>
       </>
     </ThemeProvider>
+    </div>
   );
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Index />, rootElement);

@@ -16,7 +16,7 @@ export default function ToggleMode() {
             )
           }
         >
-          Toggle Mode
+        🌙
         </Button>
       )}
     </ThemeConsumer>

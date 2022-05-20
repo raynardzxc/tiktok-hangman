@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
 import Hangman from "./Hangman/Hangman";
+import Navbar from "./Navigation/Navbar.js";
+import "./index.css";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <>
+        <Navbar />
         <Hangman />
-        <ToggleMode
-      </div>
+      </>
     );
   }
 }

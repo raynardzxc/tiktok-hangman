@@ -1,10 +1,22 @@
-
-
 .Hangman h1 {
-font-size: 4rem;
+font-size: 3rem;
 font-weight: 100;
 margin-bottom: 0.1em;
 margin-top: 0;
+}
+
+.Hangman h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 0.1em;
+  margin-top: 0;
+  }
+
+.Hangman p {
+    font-size: 1.3rem;
+    font-weight: 80;
+    margin-bottom: 0.1em;
+    margin-top: 0;
 }
 
 .Hangman-word {
@@ -50,4 +62,11 @@ background-color: #774E24;
 background: #bdbdbd;
 color: #eeeeee;
 box-shadow: 0 4px #9e9e9e;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
